@@ -1,0 +1,3 @@
+The copyright holder of the original Tux image ( https://en.wikipedia.org/wiki/File:NewTux.svg ) is Larry Ewing.
+The monochrome version ( https://commons.wikimedia.org/wiki/File:Tux-Shirt.svg ) of the Tux image was created by Gjwucherpfennig and is licensed under the Free Arts Licence ( https://commons.wikimedia.org/wiki/Commons:Free_Art_License_1.3 ).
+The Startux_Coffee image was created using the monochrome version of the Tux image.

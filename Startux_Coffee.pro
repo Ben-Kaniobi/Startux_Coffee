@@ -33,3 +33,6 @@ LIBS += -L/opt/embedded/bbb/rootfs/usr/local/qt-5.3/lib -lz -lpthread -lm -lqwt 
 
 target.path = /usr/local/bin
 INSTALLS += target
+
+RESOURCES += \
+    img/img.qrc
