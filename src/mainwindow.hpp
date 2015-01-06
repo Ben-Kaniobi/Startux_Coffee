@@ -15,6 +15,12 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
+     void closeEvent(QCloseEvent *event);
+
+private slots:
+    void on_pushButton_Start_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
