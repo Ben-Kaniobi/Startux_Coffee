@@ -1,5 +1,5 @@
-#ifndef HWHELPER_H
-#define HWHELPER_H
+#ifndef HWHELPER_HPP
+#define HWHELPER_HPP
 
 extern void Led_Init(void);
 extern void Set_LED1(void);
@@ -12,4 +12,4 @@ extern void Clear_LED3(void);
 extern void Clear_LED4(void);
 extern void Unexport_LED(void);
 
-#endif // HWHELPER_H
+#endif // HWHELPER_HPP

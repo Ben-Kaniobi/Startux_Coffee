@@ -76,6 +76,7 @@ void Led_Init(void)
 /* Set LED1 to 1 */
 void Set_LED1(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio61/value");
     if(fd.is_open())
     {
@@ -87,6 +88,7 @@ void Set_LED1(void)
 /* Set LED1 to 0 */
 void Clear_LED1(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio61/value");
     if(fd.is_open())
     {
@@ -98,6 +100,7 @@ void Clear_LED1(void)
 /* Set LED2 to 1 */
 void Set_LED2(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio44/value");
     if(fd.is_open())
     {
@@ -109,6 +112,7 @@ void Set_LED2(void)
 /* Set LED2 to 0 */
 void Clear_LED2(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio44/value");
     if(fd.is_open())
     {
@@ -120,6 +124,7 @@ void Clear_LED2(void)
 /* Set LED3 to 1 */
 void Set_LED3(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio68/value");
     if(fd.is_open())
     {
@@ -131,6 +136,7 @@ void Set_LED3(void)
 /* Set LED3 to 0 */
 void Clear_LED3(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio68/value");
     if(fd.is_open())
     {
@@ -142,6 +148,7 @@ void Clear_LED3(void)
 /* Set LED4 to 1 */
 void Set_LED4(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio67/value");
     if(fd.is_open())
     {
@@ -153,6 +160,7 @@ void Set_LED4(void)
 /* Set LED4 to 0 */
 void Clear_LED4(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/gpio68/value");
     if(fd.is_open())
     {
@@ -164,6 +172,7 @@ void Clear_LED4(void)
 /* Unexport LED1 - LED4 */
 void Unexport_LED(void)
 {
+    ofstream fd;
     fd.open("/sys/class/gpio/unexport");
     if(fd.is_open())
     {

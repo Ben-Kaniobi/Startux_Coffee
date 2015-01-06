@@ -17,7 +17,7 @@ SOURCES += src/main.cpp\
     src/hwhelper.cpp
 
 HEADERS  += src/mainwindow.hpp \
-    src/hwhelper.h
+    src/hwhelper.hpp
 
 FORMS    += layout/mainwindow.ui
 
