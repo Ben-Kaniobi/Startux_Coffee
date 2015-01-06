@@ -13,9 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += src/main.cpp\
-        src/mainwindow.cpp
+        src/mainwindow.cpp \
+    src/hwhelper.cpp
 
-HEADERS  += src/mainwindow.hpp
+HEADERS  += src/mainwindow.hpp \
+    src/hwhelper.h
 
 FORMS    += layout/mainwindow.ui
 
