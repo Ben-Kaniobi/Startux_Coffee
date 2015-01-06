@@ -80,7 +80,7 @@ void Set_LED1(void)
     fd.open("/sys/class/gpio/gpio61/value");
     if(fd.is_open())
     {
-        fd << "1";
+        fd << "0";
         fd.close();
     }
 }
@@ -92,7 +92,7 @@ void Clear_LED1(void)
     fd.open("/sys/class/gpio/gpio61/value");
     if(fd.is_open())
     {
-        fd << "0";
+        fd << "1";
         fd.close();
     }
 }
@@ -104,7 +104,7 @@ void Set_LED2(void)
     fd.open("/sys/class/gpio/gpio44/value");
     if(fd.is_open())
     {
-        fd << "1";
+        fd << "0";
         fd.close();
     }
 }
@@ -116,7 +116,7 @@ void Clear_LED2(void)
     fd.open("/sys/class/gpio/gpio44/value");
     if(fd.is_open())
     {
-        fd << "0";
+        fd << "1";
         fd.close();
     }
 }
@@ -128,7 +128,7 @@ void Set_LED3(void)
     fd.open("/sys/class/gpio/gpio68/value");
     if(fd.is_open())
     {
-        fd << "1";
+        fd << "0";
         fd.close();
     }
 }
@@ -140,7 +140,7 @@ void Clear_LED3(void)
     fd.open("/sys/class/gpio/gpio68/value");
     if(fd.is_open())
     {
-        fd << "0";
+        fd << "1";
         fd.close();
     }
 }
@@ -152,7 +152,7 @@ void Set_LED4(void)
     fd.open("/sys/class/gpio/gpio67/value");
     if(fd.is_open())
     {
-        fd << "1";
+        fd << "0";
         fd.close();
     }
 }
@@ -161,10 +161,10 @@ void Set_LED4(void)
 void Clear_LED4(void)
 {
     ofstream fd;
-    fd.open("/sys/class/gpio/gpio68/value");
+    fd.open("/sys/class/gpio/gpio67/value");
     if(fd.is_open())
     {
-        fd << "0";
+        fd << "1";
         fd.close();
     }
 }
