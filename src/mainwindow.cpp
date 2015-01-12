@@ -51,6 +51,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_Start_clicked()
 {
+    if(!this->ui->pushButton_Start->isEnabled()) return;
+
     /* Disable gui elements */
     this->ui->checkBox_Milch->setDisabled(true);
     this->ui->checkBox_Zucker->setDisabled(true);
@@ -87,10 +89,20 @@ void MainWindow::on_pushButton_Start_clicked()
         usleep(500*1000);
     }
 
-    /* Enable gui elements */
-    this->ui->checkBox_Milch->setDisabled(false);
-    this->ui->checkBox_Zucker->setDisabled(false);
-    this->ui->pushButton_Start->setDisabled(false);
+    /* Display message */
+    this->ui->label_Meldung->show();
+
+    bool btn_pressed = false;
+    while(!btn_pressed)
+    {
+        qApp->processEvents();
+        btn_pressed = Get_BTN1();
+    }
+
+    this->ui->checkBox_Milch->setEnabled(true);
+    this->ui->checkBox_Zucker->setEnabled(true);
+    this->ui->pushButton_Start->setEnabled(true);
+    this->ui->label_Meldung->hide();
 }
 
 void MainWindow::closeEvent(QCloseEvent *event)
