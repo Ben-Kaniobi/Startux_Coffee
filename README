@@ -1,0 +1,15 @@
+Startux Coffee
+
+Funktion
+Zu Beginn ist das GUI zu sehen. Solange die Taste T1 nicht gedrückt wird, also die Tasse nicht unter der Kaffeemaschiene steht, soll nichts eingestellt werden können.
+Mit druck auf T1 werden die Checkboxen und der Button im GUI aktiviert.
+Mit dem "Start" Button wird der Zubereitungsvorgang gestartet.
+	-LED 2 -> Wasser kochen
+	-LED 3 -> Milch zugeben (Nur wenn Checkbox true)
+	-LED 4 -> Zucker zugeben (Nur wenn Checkbox true)
+Vorgang Beendet: LED 1 blinkt 3 mal
+
+Installation
+->Bin Datei auf das BBB kopieren und in Target starten
+oder
+->Projekt in QTcreator einbinden und mit Play starten
