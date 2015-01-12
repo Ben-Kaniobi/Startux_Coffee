@@ -102,6 +102,29 @@ QCheckBox::indicator:checked{image:url(:/checkbox_checked.png);}</string>
      <string>Start</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_Meldung">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>390</y>
+      <width>800</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <italic>true</italic>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{qproperty-alignment:AlignCenter;}</string>
+    </property>
+    <property name="text">
+     <string>Bitte zuerst die Tasse hinstellen</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
