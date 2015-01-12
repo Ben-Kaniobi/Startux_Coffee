@@ -10,11 +10,12 @@ void handleShutDownSignal( int signalId );
 int main(int argc, char *argv[])
 {
     /* LED init */
-    Led_Init();
+    LED_Init();
     Clear_LED1();
     Clear_LED2();
     Clear_LED3();
     Clear_LED4();
+    BTN_Init();
 
     QApplication a(argc, argv);
     MainWindow w;
@@ -45,6 +46,7 @@ void handleShutDownSignal( int /*signalId*/ )
 {
     /* LED cleanup */
     Unexport_LED();
+    Unexport_BTN();
 
     QApplication::exit(0);
 }

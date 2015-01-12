@@ -12,7 +12,37 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    isInitialized = false;
 }
+
+/* Init after UI visible */
+bool MainWindow::event(QEvent *event)
+{
+    int returnValue = QWidget::event(event);
+
+    if (event->type() == QEvent::WindowActivate)
+    {
+        if(!isInitialized)
+        {
+            bool btn_pressed = false;
+            while(!btn_pressed)
+            {
+                btn_pressed = Get_BTN1();
+            }
+
+            this->ui->checkBox_Milch->setEnabled(true);
+            this->ui->checkBox_Zucker->setEnabled(true);
+            this->ui->pushButton_Start->setEnabled(true);
+            this->ui->label_Meldung->hide();
+
+            isInitialized = true;
+        }
+    }
+
+    return returnValue;
+}
+
 
 MainWindow::~MainWindow()
 {
@@ -67,6 +97,7 @@ void MainWindow::closeEvent(QCloseEvent *event)
 {
     /* LED cleanup */
     Unexport_LED();
+    Unexport_BTN();
 
     event->accept();
 }

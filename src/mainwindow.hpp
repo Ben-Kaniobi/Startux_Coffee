@@ -23,6 +23,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    bool isInitialized;
+    bool event(QEvent *event);
 };
 
 #endif // MAINWINDOW_HPP

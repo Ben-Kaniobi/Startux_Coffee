@@ -34,6 +34,9 @@
     </property>
    </widget>
    <widget class="QCheckBox" name="checkBox_Zucker">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -58,6 +61,9 @@ QCheckBox::indicator:checked{image:url(:/checkbox_checked.png);}</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="checkBox_Milch">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -81,7 +87,7 @@ QCheckBox::indicator:checked{image:url(:/checkbox_checked.png);}</string>
    </widget>
    <widget class="QPushButton" name="pushButton_Start">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
